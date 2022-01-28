@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>t4</title>
+	<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: hsl(0, 0%, 90%);
+
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: white;
+}
+.button{
+	background-color: blue;
+}
+</style>
+</head>
+<body>
+<section class="main">
+    <div class="container">
+      <p style="text-align: center;font-size: 200%;">LOREM IPSUM IS SIMPLY</p>
+      <div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="q1.png"width="297" height="228">
+     <h4> <p style="color:black;">LOREM IPSUM</p></h4>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+      <div class="container bg-light">
+        <div class="col-md-12 text-center">
+            <button type="button" class="btn btn-primary">More Info</button>
+        </div>
+    </div>
+    </div>
+  </div>
+  <div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="q2.png"width="297" height="228">
+     <h4> <p style="color:black;">LOREM IPSUM</p></h4>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+      <div class="container bg-primary">
+        <div class="col-md-12 text-center">
+            <button type="button" class="btn btn-primary">More Info</button>
+        </div>
+    </div>
+    </div>
+  </div><div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="q3.png"width="297" height="228">
+     <h4> <p style="color:black;">LOREM IPSUM</p></h4>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+        <button type="button" class="btn btn-primary">More Info</button>
+    </div>
+    </div>
+  </div>
+</body>
+</html>

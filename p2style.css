@@ -1,0 +1,12 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+ #textCss
+{
+	font-family: 'Notable', sans-serif;
+	color: darkred;
+	letter-spacing: 2px;
+	word-spacing: 5px;
+}

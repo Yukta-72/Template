@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+.card-img-top-round {
+  background-color: blue;
+  border-radius: 70%;
+  padding-bottom: 5px;
+  margin-top: -54px;
+}
+</style>
+</head>
+<body>
+  <section class="main">
+    <div class="container">
+      <p style="text-align: center;font-size: 200%;">OUR SERVICES</p>
+    </div>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="t1.png" width="70" height="70"class="card-img-top-round">
+      <h3>Lorem Ipsum Is </h3>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+      <p style="font-weight: bold;">Learn More<a href="#" class="btn btn-white" style="color: primary;"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="17" fill="Blue" class="bi bi-arrow-right-circle-fill" >
+  <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+</svg></a></p>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="t2.png" width="70" height="70"class="card-img-top-round">
+      <h3>Lorem Ipsum Is </h3>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+      <p style="font-weight: bold;">Learn More<a href="#" class="btn btn-white" style="color: primary;"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="17" fill="Blue" class="bi bi-arrow-right-circle-fill" >
+  <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+</svg></a></p>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="t3.png" width="70" height="70"class="card-img-top-round">
+      <h3>Lorem Ipsum Is </h3>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+      <p style="font-weight: bold;">Learn More<a href="#" class="btn btn-white" style="color: primary;"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="17" fill="Blue" class="bi bi-arrow-right-circle-fill" >
+  <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+</svg></a></p>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="t4.png"width="70" height="70" class="card-img-top-round">
+      <h3>Lorem Ipsum Is </h3>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+      <p style="font-weight: bold;">Learn More<a href="#" class="btn btn-white" style="color: primary;"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="17" fill="Blue" class="bi bi-arrow-right-circle-fill" >
+  <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+</svg></a></p>
+    </div>
+  </div>
+</div>
+</body>
+</html>

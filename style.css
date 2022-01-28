@@ -1,0 +1,25 @@
+*{
+	margin:0 ;
+	padding:0 ;
+}
+.backimg
+{
+	width: 100%;
+	height: 100vh;
+	/*background-color: skyblue;*/
+	background-image: url('n1.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100% 100%;
+}
+.backimg1
+{
+	width: 100%;
+	height: 100vh;
+	/*background-color: skyblue;*/
+	background-image: url('n2.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100% 100%;
+
+}

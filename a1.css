@@ -1,0 +1,65 @@
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+.previous {
+  background-color: #f1f1f1;
+  color: black;
+}
+.next {
+  background-color: royalblue;
+  color: white;
+}
+.progressbar{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  counter-reset: step;
+}
+.progress-step{
+  width: 40px;
+  height: 40px;
+  background-color: royalblue;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.progress-step::before{
+  counter-increment: step;
+  content: counter(step);
+}
+.progress-step::after{
+  content: attr(data-title);
+  position: absolute;
+  top: calc(80% + 2px);
+  font-size: 15px;
+  color: black;
+  margin-left: 10px;
+  padding-left: 10px;
+}
+.progressbar::before{
+  content: "";
+  position: absolute;
+  top: 50%;
+  height: 1px;
+  width: 94%;
+  transform: translateY(-50%);
+  background-color: lightgray;
+  z-index: -1;
+}
+.progress-step-active{
+  border-color: royalblue;
+}
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape){
+  body{
+         color: green;
+  }
+}
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait){
+  body1{
+         color: royalblue;
+  }
+}
